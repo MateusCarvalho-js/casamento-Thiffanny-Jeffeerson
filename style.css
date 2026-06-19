@@ -659,3 +659,8 @@ buttons ajust */
   gap: 20px;
   align-items: center;
 }
+
+.text-info {
+  color: white;
+  font-size: 0.860rem;
+}
