@@ -576,10 +576,6 @@ body {
     font-size: 16px;
   }
 
-  .section-buttons {
-    padding: 0 12px;
-  }
-
   .btn {
     padding: 20px 25px;
     font-size: 1px;
@@ -612,6 +608,8 @@ body {
 /*
 buttons ajust */
 .section-buttons {
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   position: relative;
   bottom: 500px;
@@ -662,5 +660,25 @@ buttons ajust */
 
 .text-info {
   color: white;
-  font-size: 0.860rem;
+  font-size: 0.86rem;
+}
+
+/* AREA PRESENTES */
+.organization-presentes {
+  width: 100%;
+  min-height: 100dvh; /* Garante o preenchimento total ignorando a barra de navegação do mobile */
+  background-image: url("./public/6.png");
+  background-size: cover; /* Faz a imagem preencher toda a tela sem distorcer */
+  background-position: center; /* Centraliza o ponto principal da imagem */
+  background-repeat: no-repeat; /* Evita que a imagem duplique em telas maiores */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  color: white; /* Mantido apenas um 'color', removido o #000 duplicado */
+  margin: 0 auto; /* Removido o margin-top de 50px para não quebrar o preenchimento no topo */
+  padding: 50px 20px; /* Adicionado padding para afastar o texto das bordas no mobile */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho da tela */
 }
